@@ -41,18 +41,21 @@ if con==1:
         print("You got C grade with",{per},"\b%")
     else:
         print("You Failed with",{per},"\b%")
+#Even and odd program
 elif con==2:
     CH=eval(input("Enter a No: "))
     if CH%2==0:
         print("No is  Even")
     else:
         print("No is odd")
+#Vowel program
 elif con==3:
     CH=input("Enter an alphabet").upper()
     if CH=="A" or CH=="E" or CH=="I" or CH=="O" or CH=="U":
         print("Character is a Vowel")
     else:
         print("Character is a Consonant")
+#Area of circle program
 elif con==4:
     PI  = 3.14
     rad=eval(input("Enter the radius of your circle\n"))
@@ -61,6 +64,7 @@ elif con==4:
         print("The Area of your  circle is : ",{tot})
     else:
         print("Invalid Radius")
+#Calculator
 elif con==5:
     x,y=eval(input("Enter value for X\n")),eval(input("Enter value for Y\n"))
     opp=eval(input("Press 1 for Addition\nPress 2 for Subtraction\nPress 3 for Multiplication\nPress 4 for Division\nPress 5 for Exponent\n"))
@@ -75,7 +79,7 @@ elif con==5:
         print({x}," * ",{y}," = ",{z})
     elif opp==4:
         z=x/y
-        print(f'{x}," / ",{y}," = ",{z:.2f}')
+        print(f'{x} / {y} = {z:.2f}')
     elif opp==5:
         z=x**y
         print({x}," ** ",{y}," = ",{z})
